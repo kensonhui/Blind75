@@ -1,5 +1,11 @@
 class Solution(object):
     def area(self, height, first, second):
+		"""
+		:type height: List[int]
+		:type first: int
+		:type second: int
+		rtype: int
+		"""
         return abs(first - second) * min(height[first], height[second])
     def maxArea(self, height):
         """
