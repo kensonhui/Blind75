@@ -21,4 +21,4 @@ class Solution(object):
         while (i < len(arr)):
             arr[i] = output[i]
             i += 1
-        return output
+        return
