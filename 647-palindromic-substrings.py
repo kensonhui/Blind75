@@ -2,6 +2,7 @@ class Solution(object):
     def countSubstrings(self, s):
         """
         not optimal in the general case
+		time complexity is n(n+1)/2
         :type s: str
         :rtype: int
         """
