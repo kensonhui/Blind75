@@ -1,6 +1,7 @@
 class Solution(object):
     def interpret(self, command):
         """
+        O(n) time complexity
         :type command: str
         :rtype: str
         """
