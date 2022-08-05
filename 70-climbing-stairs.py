@@ -4,11 +4,13 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if (n == 1):
-            return 1
-        steps = [1 for i in range(0, n)]
-        steps[1] = 2
+        if n <= 2:
+            return n
+        back_step = 1
+        next_step = 2
+        swap = 0
         for i in range(2, n):
-            steps[i] = steps[i - 1] + steps[i - 2]
-        return steps[n - 1]
-        
+            swap = next_step
+            next_step = next_step + back_step
+            back_step = swap
+        return next_step
